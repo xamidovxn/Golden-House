@@ -1,0 +1,369 @@
+* ::after,
+* ::before,
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style-type: none;
+}
+
+@font-face {
+   font-family: 'Poppins';
+   src: url(./fonts/Poppins/Poppins-Medium.ttf);
+}
+
+:root {
+   --white: white;
+   --black: black;
+   --silver: rgba(130, 130, 130, 1);
+   --blue__btn: rgba(49, 100, 153, 1);
+   --btn__hover: rgba(49, 99, 153, 0.661);
+   --btn__active: rgba(49, 100, 153, 1);
+}
+
+.container {
+   padding: 0 20px;
+   margin: 0 auto;
+   width: 1140px;
+}
+
+/* =============== START HEADER ================= */
+
+.header__logo:active {
+   opacity: .6;
+}
+
+.header__div {
+   width: 1120px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header__ul {
+   display: flex;
+   justify-content: space-around;
+   width: 300px;
+}
+
+.header__ul-home {
+   font-family: 'Poppins';
+   color: var(--blue__btn);
+}
+
+.header__ul-home:hover {
+   color: #316399a9;
+}
+
+.header__ul-home:active {
+   color: #316499;
+}
+
+.header__ul-list {
+   font-family: 'Poppins';
+}
+
+.header__ul-list:hover {
+   color: rgba(0, 0, 0, 0.533);
+}
+
+.header__ul-list:active {
+   color: black;
+}
+
+.header__btn {
+   width: 160px;
+   height: 50px;
+   color: var(--white);
+   border: none;
+   background-color: var(--blue__btn);
+}
+
+.header__btn:active {
+   border: 2px solid var(--blue__btn);
+   color: var(--blue__btn);
+   background-color: var(--white);
+}
+
+
+/* =============== END HEADER ================= */
+
+
+
+/* =============== START MAIN ================= */
+
+.main__div {
+   display: flex;
+   margin-top: 100px;
+   height: 560px;
+   padding: 60px;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   background-color: rgba(49, 100, 153, 0.1);
+}
+
+.main__title {
+   font-family: 'Poppins';
+   width: 500px;
+   font-size: 60px;
+}
+
+.main__p {
+   font-family: 'Poppins';
+   font-size: 20px;
+   width: 390px;
+   margin-top: 30px;
+}
+
+.main__btn {
+   width: 160px;
+   height: 50px;
+   color: var(--white);
+   border: none;
+   background-color: var(--blue__btn);
+   padding: 16px 23px 16px 23px;
+   margin-top: 60px;
+}
+
+.main__btn:active {
+   color: var(--blue__btn);
+   border: 2px solid var(--blue__btn);
+   background-color: var(--white);
+}
+
+.main__title-div {
+   margin-top: 40px;
+}
+
+.main__img {
+   margin-left: 50px;
+   width: 450px;
+   height: 450px;
+
+}
+
+
+/* =============== END MAIN ================= */
+
+
+/* =============== START SERVISE ================= */
+
+.service__div {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.service__title {
+   text-align: center;
+   font-family: 'Poppins';
+   font-size: 60px;
+   color: var(--blue__btn);
+   margin-top: 138px;
+}
+
+.card {
+   width: 340px;
+   height: 360px;
+   margin-top: 87px;
+   background-color: var(--white);
+   text-align: center;
+   box-shadow: 0 0 10px 0 black;
+   padding: 30px 20px;
+}
+
+.card:hover {
+   box-shadow: 0 0 7px 0 black;
+}
+
+.card:active {
+   box-shadow: 0 0 10px 0 black;
+}
+
+.card__title {
+   font-family: 'Poppins';
+   font-size: 30px;
+   margin-top: 30px;
+}
+
+.card__p {
+   font-family: 'Poppins';
+   font-size: 20px;
+   margin-top: 20px;
+   width: 300px;
+   color: var(--silver);
+}
+
+.card__link {
+   display: inline-block;
+   margin-top: 20px;
+   color: var(--blue__btn);
+   text-decoration: underline 1px var(--blue__btn) solid;
+}
+
+.card__link:hover {
+   color: var(--btn__hover);
+}
+
+.card__link:active {
+   color: var(--btn__active);
+}
+
+
+/* =============== END SERVISE ================= */
+
+
+/* =============== START BLOG ================= */
+
+.blog__title {
+   font-family: 'Poppins';
+   font-size: 60px;
+   color: var(--blue__btn);
+   text-align: center;
+   margin-top: 218px;
+}
+
+.blog__flex {
+   display: flex;
+   justify-content: space-between;
+}
+
+.blog__img {
+   width: 398px;
+   height: 220px;
+}
+
+.blog__div {
+   width: 398px;
+   height: 470px;
+   margin-top: 87px;
+   border: 1px solid #BDBDBD;
+   background-color: var(--white);
+}
+
+.text__title {
+   margin: 20px;
+   font-size: 30px;
+}
+
+.text__date {
+   margin: 0 20px;
+   margin-top: 27px;
+   color: var(--silver);
+}
+
+.text__p {
+   color: var(--silver);
+   margin: 20px;
+   width: 350px;
+}
+
+.text__link {
+   display: block;
+   margin: 20px;
+   color: var(--blue__btn);
+   text-decoration: underline 1px solid var(--blue__btn);
+}
+
+.hotel__div {
+   width: 398px;
+   height: 470px;
+   margin-top: 87px;
+   border: 1px solid #BDBDBD;
+   background-color: var(--white);
+}
+
+
+/* =============== END BLOG ================= */
+
+
+/* =============== START TESTIMONIAL ================= */
+
+.testimonial__title {
+   margin-top: 200px;
+   font-family: 'Poppins';
+   font-size: 60px;
+   text-align: center;
+   color: var(--blue__btn);
+}
+
+.card__flex {
+   display: flex;
+   justify-content: space-between;
+}
+
+.card__testimonial {
+   width: 340px;
+   height: 390px;
+   padding: 30px 20px;
+   margin-top: 87px;
+   text-align: center;
+   color: var(--silver);
+   background-color: #fff;
+   box-shadow: 0 0 10px 0 black;
+   font-family: 'Poppins';
+}
+
+.card__testimonial:active {
+   background-color: #cfcfcf;
+}
+
+.testimonial__name {
+   margin: 20px 0 15px 0;
+}
+
+.start__testimonial {
+   margin: 15px;
+}
+
+
+/* =============== END TESTIMONIAL ================= */
+
+
+/* =============== START FOOTER ================= */
+
+.footer__flex {
+   width: 100%;
+   height: 400px;
+   margin-top: 110px;
+   display: flex;
+   align-items: center;
+   color: var(--white);
+   font-family: 'Poppins';
+   justify-content: space-around;
+   background-color: rgba(49, 100, 153, 1);
+}
+
+.footer__title {
+   margin-bottom: 37px;
+}
+
+.footer__ul-list {
+   color: var(--white);
+   margin-top: 15px;
+}
+
+.footer__ul-loca {
+   width: 160px;
+   display: inline-block;
+}
+
+.margin {
+   margin-top: 20px;
+}
+
+.footer__num {
+   display: inline-block;
+   text-align: center;
+}
+
+.ul__flex {
+   display: flex;
+   justify-content: space-around;
+}
+
+
+
+
+/* =============== END FOOTER ================= */
+
